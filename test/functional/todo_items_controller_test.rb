@@ -20,7 +20,7 @@ class TodoItemsControllerTest < ActionController::TestCase
                 assert_equal 3, assigns(:items).length
                 assert_equal TodoItem, assigns(:items).first.class
             end
-          end  
+             end  
     
 
     context "GET to show" do 
@@ -35,6 +35,10 @@ class TodoItemsControllerTest < ActionController::TestCase
         should "give me 1 Todo Item" do
             assert_equal TodoItem.find(1), assigns(:item)
         end
+        
+
+
      end 
+
     end   
 end
