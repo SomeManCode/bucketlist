@@ -1,12 +1,15 @@
+
+
 <!-- lists each to do item -->
 <div class="todo-item <%= todo_item.completed? ? 'completed' : ''%>">
     <%= todo_item.name %>
 </div>
 
-<!-- renders comments using partial -->
+<!-- renders comments using partial  -->
+<!-- assigns todo_item to each ID -->
 <div class ="comments">
     <% todo_item.comments.each do |comment| %>
-    <%= render comment %>
+        <%= render comment %>
     <% end %>
 </div>
 <!-- renders the comments form -->

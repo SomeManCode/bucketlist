@@ -1,7 +1,8 @@
 Bucketlist::Application.routes.draw do
 
-    root :to => 'todo_items#index'  
-  resources :comments, :only => :create
-  resources :todo_items, :only => [:index, :show]
+  root :to => 'todo_items#index'  
+  resources :comments 
+  resources :todo_items
+  resources :destinations
 
 end

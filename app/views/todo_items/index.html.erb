@@ -1,9 +1,20 @@
-<h1>The Bucket List</h1>
-
- <div id="map-canvas">
+<div class="banner">
+    <h1>The Bucket List</h1>
+    <p>A todo-list.... before you die</p>
 </div>
-<% @items.each do |i| %>
- <%= render i %>
+<div id="search">
+    <input type="text" class="search" placeholder="Enter a search term">
+</div>
 
- <% end %>
+<%= render 'todo_items/create_item' %>
 
+
+<div id="map-canvas">
+</div>
+
+
+<body>
+    <% @items.each do |i| %>
+         <%= render i %>
+     <% end %>
+</body>    

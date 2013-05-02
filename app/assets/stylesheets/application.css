@@ -1,6 +1,8 @@
-h1 {
-    font-family: cursive;
-    text-align: center;
+.banner {
+    font-family: Andale Mono;
+    text-align: left;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 20px;
 }
 
 .todo-item {
