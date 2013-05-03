@@ -2,10 +2,8 @@
 <div class="item-form">
     <%= form_for TodoItem.new do |f| %>
 
-            <div class="field">
-                <%= f.label :destination %>
-                <%= f.text_field :destination_id %>
-            </div>
+                <%= f.hidden_field :destination_id %>
+
 
             <div class="field">
                 <%= f.label :name %>
