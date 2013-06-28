@@ -1,4 +1,5 @@
 <div class="banner">
+
     <h1>The Bucket List</h1>
     <p>A todo-list.... before you die :-(</p>
 </div>
@@ -7,19 +8,28 @@
 </div>
 
 
-
+<!-- renders destination form -->
 <%= render :partial => 'destinations/form' %>
-
-
-<%= render 'todo_items/create_item' %>
-
+<br>
+New Destination
+<%= render :partial => 'todo_items/create_item' %>
 
 <div id="map-canvas">
 </div>
 
 
 <body>
+    <!-- locals passes variables that are within scope --> 
+    <%#= render :partial => 'todo_items/create_item', :locals => {:destination => d.id} %>
+    
+    <%= render :partial => 'destinations/destination' %>
+
     <% @items.each do |i| %>
          <%= render i %>
      <% end %>
-</body>    
+</body>
+
+
+
+
+

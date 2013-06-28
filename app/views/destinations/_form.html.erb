@@ -2,17 +2,12 @@
 
     <h3>New Destination</h3>
     <%= form_for(Destination.new, :remote => true) do |f| %>
-
     <div class = "field">
             <%= f.text_field :name %>
     </div>
-
-
     <div class = "field">
             <%= f.submit  %>
     </div>
-
-
     <% end %>
 
 
